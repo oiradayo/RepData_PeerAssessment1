@@ -18,7 +18,6 @@ library(dplyr)
 
 ```
 ```{r, echo=TRUE}
-fileurl <- 'https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip'
 if(!file.exists('activity.csv')) {
         download.file(fileurl, 'zipfile.zip', method='curl')
         unzip('zipfile.zip')
