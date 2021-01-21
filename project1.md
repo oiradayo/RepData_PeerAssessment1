@@ -41,11 +41,12 @@ daysteps <- tapply(activity$steps, activity$date, sum, na.rm=T)
 daysteps %>% qplot(xlab='steps per day', ylab='frequency', binwidth=700)
 ```
 
-**Calculate and report the mean  of the total number of steps taken per day**
+**Calculate and report the mean and median of the total number of steps taken per day**
 ```{r, echo=TRUE}
 meanvalue <- mean(daysteps)
+medianvalue <- median(daysteps)
 ```
-Mean: `r meanvalue`
+Mean: `r meanvalue`, Median:`r medianvalue`
 
 ## What is the average daily activity pattern?
 ___________________
