@@ -44,9 +44,8 @@ daysteps %>% qplot(xlab='steps per day', ylab='frequency', binwidth=700)
 **Calculate and report the mean and median of the total number of steps taken per day**
 ```{r, echo=TRUE}
 meanvalue <- mean(daysteps)
-medianvalue <- median(daysteps)
 ```
-Mean: `r meanvalue`, Median:`r medianvalue`
+Mean: `r meanvalue`
 
 ## What is the average daily activity pattern?
 ___________________
